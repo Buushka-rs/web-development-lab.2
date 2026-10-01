@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаборатори 02: Хэрэглэгчийн анкет</title>
+</head>
+<body>
+    <!-- Толгой хэсэг -->
+    <header>
+        <h1>Оюутны Бүртгэлийн Портал</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Нүүр</a></li>
+                <li><a href="#">Анкет засах</a></li>
+                <li><a href="#">Тусламж</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Үндсэн хэсэг -->
+    <main>
+        <article>
+            <!-- Анкет бөглөх хэсэг -->
+            <section>
+                <h2>Хэрэглэгчийн Анкет</h2>
+                <form action="#" method="POST" enctype="multipart/form-data">
+                    
+                    <!-- Хувийн мэдээлэл -->
+                    <fieldset>
+                        <legend>Хувийн мэдээлэл</legend>
+                        <label for="fullname">Овог нэр:</label><br>
+                        <input type="text" id="fullname" name="fullname" required minlength="2"><br>
+
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required><br>
+
+                        <label for="password">Нууц үг:</label><br>
+                        <input type="password" id="password" name="password" required minlength="6"><br>
+
+                        <label for="phone">Утас:</label><br>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" placeholder="88112233"><br>
+
+                        <label for="dob">Төрсөн огноо:</label><br>
+                        <input type="date" id="dob" name="dob" required><br>
+
+                        <label>Хүйс:</label><br>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Эрэгтэй</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Эмэгтэй</label><br>
+                    </fieldset>
+
+                    <!-- Боловсрол ба сонголт -->
+                    <fieldset>
+                        <legend>Боловсрол ба Сонголт</legend>
+                        <label for="degree">Сургалтын чиглэл:</label><br>
+                        <select id="degree" name="degree" required>
+                            <option value="">-- Сонгоно уу --</option>
+                            <option value="bachelor">Бакалавр</option>
+                            <option value="master">Магистр</option>
+                            <option value="doctor">Докторант</option>
+                        </select><br><br>
+
+                        <label>Сонирхож буй технологиуд:</label><br>
+                        <input type="checkbox" id="html" name="skills" value="HTML">
+                        <label for="html">HTML5 / CSS3</label><br>
+                        <input type="checkbox" id="js" name="skills" value="JavaScript">
+                        <label for="js">JavaScript</label><br>
+                        <input type="checkbox" id="php" name="skills" value="PHP">
+                        <label for="php">PHP & MySQL</label><br><br>
+
+                        <label for="avatar">Профайлын зураг:</label><br>
+                        <input type="file" id="avatar" name="avatar" accept="image/*"><br><br>
+
+                        <label for="bio">Товч танилцуулга:</label><br>
+                        <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Өөрийн танилцуулгыг энд бичнэ үү."></textarea><br>
+                    </fieldset>
+
+                    <!-- Товчлуурууд -->
+                    <button type="submit">Анкет илгээх</button>
+                    <button type="reset">Дахин бөглөх</button>
+                </form>
+            </section>
+
+            <!-- Сонирхлын жагсаалт -->
+            <section>
+                <h2>Миний сонирхол</h2>
+                <ul>
+                    <li>Веб хөгжүүлэлт</li>
+                    <li>Фото зураг авах</li>
+                    <li>Кино үзэх</li>
+                </ul>
+            </section>
+
+            <!-- Дүнгийн хүснэгт -->
+            <section>
+                <h2>Миний дүн</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Хичээл</th>
+                            <th>Дүн</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Веб зохион</td><td>95</td></tr>
+                        <tr><td>Мэдээллийн систем</td><td>88</td></tr>
+                        <tr><td>Алгоритм</td><td>92</td></tr>
+                    </tbody>
+                </table>
+            </section>
+        </article>
+    </main>
+
+    <!-- Хөл хэсэг -->
+    <footer>
+        <p>© Зохиогч: 2026 Веб зохион бүтээгч. Бүх эрх хуулиар хамгаалагдсан.</p>
+    </footer>
+</body>
+</html>
